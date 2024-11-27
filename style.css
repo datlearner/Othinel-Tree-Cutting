@@ -533,6 +533,9 @@ footer .btns a{
     .infor-div1, .infor-div2{
         width: 400px;
     }
+    .div1 p{
+        line-height: normal;
+    }
 
 }
 
