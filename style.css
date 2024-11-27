@@ -100,6 +100,7 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: #43C266;
 }
 
 .container h1{
@@ -117,7 +118,7 @@ section {
 
 .container .pic{
     width: 950px;
-    background-image: url(./1.webp);
+    background-image: url(./images/1.webp);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -213,24 +214,35 @@ section {
 
 
 .div2{
-    background-image: url(./img/2.webp);
+    background-image: url(./images/2.webp);
     background-position: center;
     background-size: cover;
-
+    
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
 }
 
 .div1{
+    background-color: azure;
     display: grid;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 45px;
     place-items: center;
 }
 
 .div1 h1{
 
     text-transform: capitalize;
-    margin: 3px 0px;
+    margin: 3px 5px;
+
+}
+
+.div1 span{
+    color: #43C266;
 }
 
 .div1 p{
+    margin: 0px 5px;
     line-height: 35px;
     text-transform: capitalize;
 }
@@ -238,10 +250,21 @@ section {
 .div1 a{
     text-decoration: none;
     text-transform: capitalize;
-    background-color: aliceblue;
-    padding: 7px 25px;
+    background-color: #43C266;
+    padding: 7px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    color: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
+.div1 a:hover{
+    background-color: white;
+    border: 2px solid #43C266;
+}
 
 
 
