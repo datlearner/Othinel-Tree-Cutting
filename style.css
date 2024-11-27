@@ -10,6 +10,22 @@ body, html {
     height: 100%;
 }
 
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #43C266;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
 .container{
     width: 100%;
     min-height: 99%;
@@ -100,7 +116,6 @@ section {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #43C266;
 }
 
 .container h1{
@@ -209,7 +224,7 @@ section {
     margin: 10px;
     width: 550px;
     height: 500px;
-    background-color: #43C266;
+
 }
 
 
@@ -217,16 +232,15 @@ section {
     background-image: url(./images/2.webp);
     background-position: center;
     background-size: cover;
-    
-    border-top-right-radius: 45px;
-    border-bottom-left-radius: 45px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .div1{
-    background-color: azure;
     display: grid;
-    border-bottom-right-radius: 45px;
-    border-top-left-radius: 45px;
     place-items: center;
 }
 
@@ -266,8 +280,194 @@ section {
     border: 2px solid #43C266;
 }
 
+/*section 3*/
+
+.information-section{
+
+    width: 100%;
+    min-height: 100%;
+    background-color: red;
+    display: grid;
+    align-items: center;
+}
+
+.infor-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infor-div1, .infor-div2{
+
+    border: 2px solid;
+    width: 500px;
+    margin: 10px;
+    height: 400px;
+    
+}
+
+.parent-div{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.red, .blue{
+    width: 220px;
+    height: 340px;
+    margin: 10px;
+}
+
+.parent-div .red{
+    background-image: url(./images/3.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.blue .one{
+    width: 220px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.blue .two{
+    width: 220px;
+    height: 190px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: pink;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.our-services {
+    width: 100%;
+    min-height: 60%;
+    display: grid;
+    align-items: center;
+    background-color: #43C266;
+}
+
+.our-services .service-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-services .service-flex .card,
+.card1{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+    background-color: white;
+}
+
+.our-services .service-flex .card{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.our-services .service-flex .card img{
+    width: 40px;
+}
+
+.our-services .service-flex .card p{
+    line-height: 35px;
+    text-align: center;
+}
+
+.our-services .service-flex .card span{
+    color: #43C266;
+}
+.our-services .service-flex .card1{
+    position: relative;
+    text-align: center;
+}
+.our-services .service-flex .card1 img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.our-services .service-flex .card1 p{
+    color: #43C266;
+    font-weight: 700;
+}
+
+.second{
+    background-color: violet;
+}
 
 
+.our-services .service-flex
+.card1:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+footer{
+    width: 100%;
+    min-height: 50%;
+
+}
+
+footer h1{
+    text-align: center;
+    margin-top: 30px;
+}
+footer span{
+    color: #43C266;
+
+}
+
+footer .btns{
+    width: 300px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    margin: 20px 5px;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+footer .btns img{
+    width: 70px;
+    background-color: #43C266;
+    padding: 10px;
+    border-radius: 70px;
+}
+
+footer .btns a{
+    color: black;
+    text-decoration-color: #43C266;
+    -moz-text-decoration-color: #43C266;
+}
 
 
 
@@ -330,6 +530,9 @@ section {
         width: 360px;
         height: 350px;
     }
+    .infor-div1, .infor-div2{
+        width: 400px;
+    }
 
 }
 
@@ -376,5 +579,12 @@ section {
     }
     .div1, .div2{
         width: 325px;
+    }
+    
+    .our-services .service-flex .card,
+    .card1{
+
+        width: 300px;
+
     }
 } 
