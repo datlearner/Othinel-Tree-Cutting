@@ -534,7 +534,7 @@ footer .btns a{
         width: 400px;
     }
     .div1 p{
-        line-height: normal;
+        line-height: normal !important;
     }
 
 }
