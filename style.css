@@ -127,6 +127,7 @@ section {
     font-weight: 900;
     font-size: 45px;
     margin: 15px 0px;
+    opacity: 0;
     text-transform: capitalize;
 }
 
@@ -134,7 +135,7 @@ section {
     color: #43C266;
 }
 
-
+/*first div for animation*/
 .container .pic{
     width: 950px;
     background-image: url(./images/1.webp);
@@ -142,6 +143,8 @@ section {
     background-position: center;
     border-radius: 10px;
     height: 400px;
+    margin-top: -40px;
+    opacity: 0;
     margin-left: auto;
     display: block;
     margin-right: auto;
@@ -223,11 +226,11 @@ section {
 
 
 .centerr{
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
-
+/*divs for the second section*/
 .div1, .div2{
     margin: 10px;
     width: 550px;
@@ -245,11 +248,13 @@ section {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    opacity: 1;
 }
 
 .div1{
     display: grid;
     place-items: center;
+    opacity: 0;
 }
 
 .div1 h1{
@@ -385,23 +390,25 @@ section {
     width: 350px;
     height: 350px;
     margin: 10px;
+    opacity: 0;
     border-radius: 10px;
     transition: 0.4s;
     background-color: white;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .our-services .service-flex .card{
     display: grid;
     place-items: center;
     align-items: center;
+    opacity: 0;
 }
 
 .our-services .service-flex .card img{
@@ -536,12 +543,14 @@ footer .btns a{
     background-image: url(./images/9.webp);
     background-size: cover;
     background-position: center;
+    
 }
 
 .hire-page .hire-flex .img{
     background-image: url(./images/10.webp);
     background-size: cover;
     background-position: center;
+    opacity: 0;
 }
 
 .hire-page .hire-flex h4{
@@ -577,6 +586,10 @@ footer .btns a{
     margin: 0px 10px;
 }
 
+
+.infor-div1{
+    opacity: 0;
+}
 
 
 
